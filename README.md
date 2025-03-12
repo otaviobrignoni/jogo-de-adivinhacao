@@ -55,7 +55,7 @@ dotnet restore
 
 #### Navegue até a pasta do projeto
 ```
-cd JogoDaAdivinhacao.ConsoleApp
+cd JogoDeAdivinhacao.ConsoleApp
 ```
 
 #### Execute o projeto
