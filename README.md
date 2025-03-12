@@ -40,12 +40,12 @@ O jogador interage com o jogo por meio do console, digitando números e recebendo
 
 #### Clone o Repositório
 ```
-git clone 
+git clone https://github.com/otaviobrignoni/jogo-de-adivinhacao.git 
 ```
 
 #### Navegue até a pasta raiz da solução
 ```
-cd jogo-de-adivinhacao-2025
+cd jogo-de-adivinhacao
 ```
 
 #### Restaure as dependências
