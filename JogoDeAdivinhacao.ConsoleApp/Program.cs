@@ -62,7 +62,7 @@
                 {
                     Console.Clear();
                     Console.WriteLine("----------------------------------------------------");
-                    Console.WriteLine("Dificuldade do teimoso");
+                    Console.WriteLine("Dificuldade selecionada: Secreta");
                     Console.WriteLine("----------------------------------------------------");
                     Console.WriteLine("Você tem 1 tentativa.");
                     Console.WriteLine("----------------------------------------------------");
@@ -79,7 +79,6 @@
                     Console.WriteLine("----------------------------------------------------");
                     Console.WriteLine($"Tentativa {i} de {totalTentaivas}");
                     Console.WriteLine("----------------------------------------------------");
-                    Console.WriteLine(numeroSecreto);
                     Console.Write("\nDigite um número -> ");
                     int numeroDigitado = Convert.ToInt32(Console.ReadLine());
 
