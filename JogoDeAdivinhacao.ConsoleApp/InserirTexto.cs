@@ -1,17 +1,15 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace JogoDeAdivinhacao.ConsoleApp;
+﻿namespace JogoDeAdivinhacao.ConsoleApp;
 
 class InserirTexto
 {
     public static char Continuar()
     {
         Console.Write("\nDeseja continuar? (S/N) -> ");
-        string entradaUsuario = Console.ReadLine()!.ToUpper();
-        while (entradaUsuario != "S" && entradaUsuario != "N")
+        string entradaUsuario = Console.ReadLine()!;
+        while (entradaUsuario != "S" && entradaUsuario != "N" && entradaUsuario != "s" && entradaUsuario != "n" || (entradaUsuario == null))
         {
             Console.Write("Opção inválida, tente novamente -> ");
-            entradaUsuario = Console.ReadLine()!.ToUpper();
+            entradaUsuario = Console.ReadLine()!;
         }
         return entradaUsuario[0];
     }

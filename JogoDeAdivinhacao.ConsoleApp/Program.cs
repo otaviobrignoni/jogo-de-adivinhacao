@@ -12,8 +12,9 @@ internal class Program
             Random geradorNumeros = new Random();
             int numeroSecreto = geradorNumeros.Next(1, 21);
 
-            Logica.AdivinharNumeroSecreto(totalTentativas, numeroSecreto);            
-            if (InserirTexto.Continuar() != 'S')
+            Logica.AdivinharNumeroSecreto(totalTentativas, numeroSecreto);
+            char continuar = InserirTexto.Continuar();
+            if (continuar != 'S')
                 break;
         }
     }
