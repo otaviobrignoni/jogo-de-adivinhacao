@@ -6,12 +6,8 @@ internal class Program
     {
         do
         {
-            JogoAdivinhacao.Texto.EscreverInicio();
-            JogoAdivinhacao.Entrada.SelecionarDificuldade();
-            JogoAdivinhacao.DefinirDificuldade();
-            JogoAdivinhacao.GerarNumeroSecreto();
-            JogoAdivinhacao.AdivinharNumeroSecreto();
+            JogoAdivinhacao.NovoJogo();
         }
-        while (JogoAdivinhacao.Entrada.Continuar());
+        while (JogoAdivinhacao.Entrada.ContinuarJogo());
     }
 }

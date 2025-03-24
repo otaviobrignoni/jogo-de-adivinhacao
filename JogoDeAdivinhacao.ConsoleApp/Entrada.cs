@@ -4,9 +4,9 @@ partial class JogoAdivinhacao
 {
     public class Entrada
     {
-        public static bool Continuar()
+        public static bool ContinuarJogo()
         {
-            Console.Write("\nDeseja continuar? (S/N) -> ");
+            Console.Write("\nDeseja jogar novamente? (S/N) -> ");
             string entradaUsuario = Console.ReadLine()!;
             while (entradaUsuario != "S" && entradaUsuario != "N" && entradaUsuario != "s" && entradaUsuario != "n" || (entradaUsuario == null))
             {

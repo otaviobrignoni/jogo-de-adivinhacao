@@ -7,6 +7,15 @@ partial class JogoAdivinhacao
     static int totalTentativas;
     static int tentativaAtual;
 
+    public static void NovoJogo()
+    {
+        Texto.EscreverInicio();
+        Entrada.SelecionarDificuldade();
+        DefinirDificuldade();
+        GerarNumeroSecreto();
+        AdivinharNumeroSecreto();
+    }
+
     public static void GerarNumeroSecreto()
     {
         Random geradorNumeros = new Random();
