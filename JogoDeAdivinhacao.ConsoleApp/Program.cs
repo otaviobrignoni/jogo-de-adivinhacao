@@ -4,18 +4,14 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        while (true)
+        do
         {
-            EscreverTexto.EscreverInicio();
-            int totalTentativas = Logica.DefinirDificuldade(InserirTexto.NumeroEntradaUsuario());
-
-            Random geradorNumeros = new Random();
-            int numeroSecreto = geradorNumeros.Next(1, 21);
-
-            Logica.AdivinharNumeroSecreto(totalTentativas, numeroSecreto);
-            char continuar = InserirTexto.Continuar();
-            if (continuar != 'S')
-                break;
+            JogoAdivinhacao.Texto.EscreverInicio();
+            JogoAdivinhacao.Entrada.SelecionarDificuldade();
+            JogoAdivinhacao.DefinirDificuldade();
+            JogoAdivinhacao.GerarNumeroSecreto();
+            JogoAdivinhacao.AdivinharNumeroSecreto();
         }
+        while (JogoAdivinhacao.Entrada.Continuar());
     }
 }
